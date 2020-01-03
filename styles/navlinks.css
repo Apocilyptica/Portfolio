@@ -1,0 +1,50 @@
+.navbar #button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    font-family: 'Space Mono', monospace;
+    background-color: #000000;
+    border-radius: 10px;
+    color: white;
+    padding: 0px 25px;
+    text-align: center;
+    font-size: 2em;
+    cursor: pointer;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.active, .btn:hover {
+    color: #FF0000;
+    -webkit-animation-name: navlinkColor; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 60s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-name: navlinkColor;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes navlinkColor {
+    0%   {color: #FF0000;}
+    16.67%  {color: #FFAA00;}
+    33.33%  {color: #FFFF00;}
+    50% {color: #00FF00;}
+    66.67% {color: #1A60FF;}
+    83.33% {color: #A90DFF;}
+    100% {bcolor: #FF0000;}
+  }
+  
+  /* Standard syntax */
+  @keyframes navlinkColor {
+    0%   {color: #FF0000;}
+    16.67%  {color: #FFAA00;}
+    33.33%  {color: #FFFF00;}
+    50% {color: #00FF00;}
+    66.67% {color: #1A60FF;}
+    83.33% {color: #A90DFF;}
+    100% {color: #FF0000;}
+  }

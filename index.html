@@ -7,6 +7,12 @@
     <title>My Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Space+Mono|Work+Sans&display=swap" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/navlinks.css" rel="stylesheet">
+    <link href="styles/home.css" rel="stylesheet">
+    <link href="styles/aboutme.css" rel="stylesheet">
+    <link href="styles/education.css" rel="stylesheet">
+    <link href="styles/portfolio.css" rel="stylesheet">
+    <link href="styles/contact.css" rel="stylesheet">
     
 
 </head>
@@ -20,27 +26,27 @@
                     <H1>James Jager</H1>
                 </div>
                 <div id="button">
-                    <button class="btn active" id="home">Home</button>
-                    <button class="btn" id="aboutme">About Me</button>
-                    <button class="btn" id="education">Education</button>
-                    <button class="btn" id="portfolio">Portfolio</button>
-                    <button class="btn" id="contact">Contact</button>
+                    <button class="btn active" onclick="homeFunction()">Home</button>
+                    <button class="btn" onclick="aboutmeFunction()">About Me</button>
+                    <button class="btn" onclick="educationFunction()">Education</button>
+                    <button class="btn" onclick="portfolioFunction()">Portfolio</button>
+                    <button class="btn" onclick="contactFunction()">Contact</button>
                 </div>
             </div>
             <div class="main">
-                <div class="homeContent">
+                <div id="homeContent">
                     <p>Home Content</p>
                 </div>
-                <div class="aboutmeContent">
+                <div id="aboutmeContent">
                     <p>About Me Content</p>
                 </div>
-                <div class="educationContent">
+                <div id="educationContent">
                     <p>Education Content</p>
                 </div>
-                <div class="portfolioContent">
+                <div id="portfolioContent">
                     <p>Portfolio Content</p>
                 </div>
-                <div class="contactContent">
+                <div id="contactContent">
                     <p>Contact Content</p>
                 </div>
             </div>
@@ -55,4 +61,5 @@
     </div>
 </body>
 <script src="styles/navlink.js"></script>
+<script src="styles/maincontent.js"></script>
 </html>
